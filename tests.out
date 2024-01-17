@@ -1,61 +1,160 @@
 // CSC 365
 // Lab 1-b test output
 
-// TC-
-// B: 52
-// expected output: RACANELLO,NOEL,6,102\nVILARDO,EMMANUEL,2,104\nKRAKE,VALENTIN,6,109\nBEAN,INGER,6,111\nBUSSMANN,BILLY,2,108\nFEYEREISEN,WILFREDO,6,111
+// TC-1
+// S: CORKER
+// expected output: CORKER,CARTER,4,105,HANTZ,JED
 
-RACANELLO,NOEL,6,102
-VILARDO,EMMANUEL,2,104
-KRAKE,VALENTIN,6,109
-BEAN,INGER,6,111
-BUSSMANN,BILLY,2,108
-FEYEREISEN,WILFREDO,6,111
+CORKER,CARTER,4,105,HANTZ,JED
 
-// TC-
+// TC-2
+// S: KO
+// expected output: <empty line>
+
+
+
+// TC-3
+// S: LINHART B
+// expected output: LINHART,LELA,53          
+
+LINHART,LELA,53
+
+// TC-4
+// S: ME B
+// expected output: <empty line>
+
+
+
+// TC-5
+// T: FAFARD
+// expected output: COOKUS,XUAN
+//                  ELHADDAD,SHANTE
+//                  SWEDLUND,SHARRI
+//                  CIGANEK,MANIE
+//                  COVINGTON,TOMAS
+//                  EARLY,TORY
+//                  LINHART,LELA
+
+COOKUS,XUAN
+ELHADDAD,SHANTE
+SWEDLUND,SHARRI
+CIGANEK,MANIE
+COVINGTON,TOMAS
+EARLY,TORY
+LINHART,LELA
+
+// TC-6
+// Teacher: WONG
+// expected output: <empty line>
+
+ 
+
+// TC-7
+// G: 3
+// expected output: COOKUS,XUAN
+//                  ELHADDAD,SHANTE
+//                  BRODERSEN,HYE
+//                  SWEDLUND,SHARRI
+//                  CIGANEK,MANIE
+//                  COVINGTON,TOMAS
+//                  EARLY,TORY
+//                  LINHART,LELA
+//                  THEUNISSEN,GRACE
+
+COOKUS,XUAN
+ELHADDAD,SHANTE
+BRODERSEN,HYE
+SWEDLUND,SHARRI
+CIGANEK,MANIE
+COVINGTON,TOMAS
+EARLY,TORY
+LINHART,LELA
+THEUNISSEN,GRACE
+
+// TC-8
+// Grade: 7
+// expected output: <empty line>
+
+
+
+// TC-9
+// G: 5
+// expected output: <empty line>
+
+
+
+// TC-10
+// B: 55
+// expected output: SWEDLUND,SHARRI,3,107
+//                  ZAPPAVIGNA,ELLIOTT,6,106
+//                  SAENPHIMMACHA,NUMBERS,6,111
+//                  BOYTER,WAN,6,102
+//                  KOZOLA,BUSTER,2,108
+//                  DEMARTINI,DEWAYNE,6,102
+//                  BEX,TAMESHA,4,105
+//                  WERST,LEON,6,111
+//                  LAMKIN,TAMA,6,111
+
+SWEDLUND,SHARRI,3,107
+ZAPPAVIGNA,ELLIOTT,6,106
+SAENPHIMMACHA,NUMBERS,6,111
+BOYTER,WAN,6,102
+KOZOLA,BUSTER,2,108
+DEMARTINI,DEWAYNE,6,102
+BEX,TAMESHA,4,105
+WERST,LEON,6,111
+LAMKIN,TAMA,6,111
+
+// TC-11
+// Bus: 60
+// expected output: <empty line>
+
+
+
+// TC-12
 // Bus: -10
 // expected output: <empty line>
 
 
 
-// TC-
+// TC-13
 // G: 3 H
 // expected output: SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
 
 SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
 
-// TC-
+// TC-14
 // Grade: 3 Low
 // expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
 
 CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
 
-// TC-
+// TC-15
 // G: 8 L
 // expected output: <empty line>
 
 
 
-// TC-
+// TC-16
 // Grade: 4 High
 // expected output: CORKER,CARTER,3.12,HANTZ,JED,53/nRAPOSE,ALONZO,3.12,HANTZ,JED,51
 
 CORKER,CARTER,3.12,HANTZ,JED,53
 RAPOSE,ALONZO,3.12,HANTZ,JED,51
 
-// TC-
+// TC-17
 // Average: 1 
 // expected output: 1, 3.0
 
 1, 3.0
 
-// TC-
+// TC-18
 // A: 0
 // expected output: <empty line>
 
 
 
-// TC-
+// TC-19
 // Info
 // expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
 
@@ -65,7 +164,7 @@ RAPOSE,ALONZO,3.12,HANTZ,JED,51
 4: 15
 6: 21
 
-// TC-
+// TC-20
 // I
 // expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
 
@@ -75,7 +174,7 @@ RAPOSE,ALONZO,3.12,HANTZ,JED,51
 4: 15
 6: 21
 
-// TC-
+// TC-21
 // Q
 // expected output: program terminates
 

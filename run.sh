@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 studentsearch.py
+python3 schoolsearch.py

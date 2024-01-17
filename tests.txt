@@ -1,0 +1,90 @@
+// CSC 365
+// Lab 1-a test suite
+
+// all tests cases test requirement R2
+
+// TC-
+// Tests Requirements R3, R8
+// short form command name, existing bus number
+// expected output: EARLY,TORY,3,107 
+
+B: 52
+
+// TC-
+// Tests Requirements R3, R8
+// long form command name, non-existing bus number
+// expected output: <empty line>
+
+Bus: -10
+
+// TC-
+// Tests Requirements R3, R9
+// short form command name, existing grade number high
+// expected output: SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
+
+G: 3 H
+
+// TC-
+// Tests Requirements R3, R9
+// long form command name, existing grade number low
+// expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+
+Grade: 3 Low
+
+// TC-
+// Tests Requirements R3, R9
+// short form command name, non-existing grade number low
+// expected output: <empty line>
+
+G: 8 L
+
+// TC-
+// Tests Requirements R3, R9
+// long form command name, existing grade number high, with duplicates
+// expected output: CORKER,CARTER,3.12,HANTZ,JED,53/nRAPOSE,ALONZO,3.12,HANTZ,JED,51
+
+Grade: 4 High
+
+// TC-
+// Tests Requirements R3, R10
+// long form command name, existing grade number average
+// expected output: 1, 3.0
+
+Average: 1 
+
+// TC-
+// Tests Requirements R3, R10
+// short form command name, non-existing grade number average
+// expected output: <empty line>
+
+A: 0
+
+// TC-
+// Tests Requirements R3, R11
+// long form command name, info
+// expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
+
+Info
+
+// TC-
+// Tests Requirements R3, R11
+// short form command name, info
+// expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
+
+I
+
+// TC-
+// Tests Requirements R3, R13
+// quit command
+// expected output: program terminates
+Q
+
+// TC (ensured this worked by altering students.txt)
+// Tests Requirements R13, E1
+// file not found
+// expected output: "file not found" program exits gracefully
+
+// TC (ensured this worked by altering students.txt)
+// Tests Requirements R13, E1
+// wrong format of student information: grade, classroom, bus, gpa
+// expected output: "wrong <variable>" program exits gracefully 

@@ -1,1 +1,85 @@
+// CSC 365
+// Lab 1-b test output
+
+// TC-
+// B: 52
+// expected output: RACANELLO,NOEL,6,102\nVILARDO,EMMANUEL,2,104\nKRAKE,VALENTIN,6,109\nBEAN,INGER,6,111\nBUSSMANN,BILLY,2,108\nFEYEREISEN,WILFREDO,6,111
+
+RACANELLO,NOEL,6,102
+VILARDO,EMMANUEL,2,104
+KRAKE,VALENTIN,6,109
+BEAN,INGER,6,111
+BUSSMANN,BILLY,2,108
+FEYEREISEN,WILFREDO,6,111
+
+// TC-
+// Bus: -10
+// expected output: <empty line>
+
+
+
+// TC-
+// G: 3 H
+// expected output: SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
+
+SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
+
+// TC-
+// Grade: 3 Low
+// expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+
+CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+
+// TC-
+// G: 8 L
+// expected output: <empty line>
+
+
+
+// TC-
+// Grade: 4 High
+// expected output: CORKER,CARTER,3.12,HANTZ,JED,53/nRAPOSE,ALONZO,3.12,HANTZ,JED,51
+
+CORKER,CARTER,3.12,HANTZ,JED,53
+RAPOSE,ALONZO,3.12,HANTZ,JED,51
+
+// TC-
+// Average: 1 
+// expected output: 1, 3.0
+
+1, 3.0
+
+// TC-
+// A: 0
+// expected output: <empty line>
+
+
+
+// TC-
+// Info
+// expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
+
+1: 2
+2: 13
+3: 9
+4: 15
+6: 21
+
+// TC-
+// I
+// expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
+
+1: 2
+2: 13
+3: 9
+4: 15
+6: 21
+
+// TC-
+// Q
+// expected output: program terminates
+
+What search would you like to make? 
+Q
+bellaboulais@Bellas-MacBook-Air-3 lab-1 % 
 

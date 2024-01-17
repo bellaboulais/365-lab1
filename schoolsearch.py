@@ -158,34 +158,36 @@ def info(students):
 
 def is_float(string):
     try:
-        test1 = int(string)
-        return False
+        test = float(string)
+        return True
     except ValueError: 
-        try: 
-            test = float(string)
-            return True
-        except ValueError: 
-            return False
+        return False
 
 if __name__ == "__main__":
-    with open("students.txt") as file: 
-        lines = [line.strip().split(',') for line in file]
-        for line in lines:
-            if len(line) == 8:
-                last_name, first_name, grade_num, classroom, bus_route, gpa, t_last_name, t_first_name = line
-                if (grade_num.isdigit() == False) or int(grade_num) < 0 or int(grade_num) > 6:
-                    print("wrong grade")
+    try: 
+        with open("students.txt") as file: 
+            lines = [line.strip().split(',') for line in file]
+            for line in lines:
+                if len(line) == 8:
+                    last_name, first_name, grade_num, classroom, bus_route, gpa, t_last_name, t_first_name = line
+                    if (grade_num.isdigit() == False) or int(grade_num) < 0 or int(grade_num) > 6:
+                        print("wrong grade")
+                        exit()
+                    if (classroom.isdigit() == False):
+                        print("wrong classroom")
+                        exit()
+                    if (bus_route.isdigit() == False):
+                        print("wrong bus")
+                        exit()
+                    if (is_float(gpa) == False) or float(gpa) < 0 or float(gpa) > 6:
+                        print("wrong gpa")
+                        exit()
+                    fix_float = float(line[5])
+                    line[5] = fix_float
+                else: 
+                    print("error with file")
                     exit()
-                if (classroom.isdigit() == False):
-                    print("wrong classroom")
-                    exit()
-                if (bus_route.isdigit() == False):
-                    print("wrong bus")
-                    exit()
-                if (is_float(gpa) == False) or float(gpa) < 0 or float(gpa) > 6:
-                    print("wrong gpa")
-                    exit()
-                main(lines)
-            else: 
-                print("error with file")
-                exit()
+            main(lines)
+    except FileNotFoundError:
+        print("file not found")
+        exit()

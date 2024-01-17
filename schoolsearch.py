@@ -183,7 +183,7 @@ if __name__ == "__main__":
                         print("wrong gpa")
                         exit()
                     fix_float = float(line[5])
-                    line[5] = fix_float
+                    line[5] = str(fix_float)
                 else: 
                     print("error with file")
                     exit()

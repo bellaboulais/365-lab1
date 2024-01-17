@@ -1,90 +1,181 @@
 // CSC 365
 // Lab 1-a test suite
-
 // all tests cases test requirement R2
 
-// TC-
-// Tests Requirements R3, R8
-// short form command name, existing bus number
-// expected output: RACANELLO,NOEL,6,102\nVILARDO,EMMANUEL,2,104\nKRAKE,VALENTIN,6,109\nBEAN,INGER,6,111\nBUSSMANN,BILLY,2,108\nFEYEREISEN,WILFREDO,6,111
+// TC-1
+// Test Requirements R3, R4
+// short form command name, existing student
+// expected output: CORKER,CARTER,4,105,HANTZ,JED
 
-B: 56
+S: CORKER
 
-// TC-
+// TC-2
+// Test Requirements R3, R4
+// short form command name, non-existing student
+// expected output: <empty line>
+
+S: KO
+
+// TC-3
+// Test Requirements R3, R5
+// short form command name, exisitng student bus number
+// expected output: LINHART,LELA,53          
+
+S: LINHART B
+
+// TC-4
+// Test Requirements R3, R5
+// long form command name, non-existing student bus number
+// expected output: <empty line>
+
+S: ME B
+
+// TC-5
+// Test Requirements R3, R6
+// short form command name, existing teacher
+// expected output: COOKUS,XUAN
+//                  ELHADDAD,SHANTE
+//                  SWEDLUND,SHARRI
+//                  CIGANEK,MANIE
+//                  COVINGTON,TOMAS
+//                  EARLY,TORY
+//                  LINHART,LELA
+
+T: FAFARD
+
+// TC-6
+// Test Requirements R3, R6
+// Long form command name, non-existing teacher
+// expected output: <empty line>
+
+Teacher: WONG 
+
+// TC-7
+// Test Requirements R3, R7
+// short form command name, existing grade
+// expected output: COOKUS,XUAN
+//                  ELHADDAD,SHANTE
+//                  BRODERSEN,HYE
+//                  SWEDLUND,SHARRI
+//                  CIGANEK,MANIE
+//                  COVINGTON,TOMAS
+//                  EARLY,TORY
+//                  LINHART,LELA
+//                  THEUNISSEN,GRACE
+
+G: 3
+
+// TC-8
+// Test Requirements R3, R7
+// long form command name, non-existing grade
+// expected output: <empty line>
+
+Grade: 7
+
+// TC-9
+// Test Requirements R3, R7
+// short form command name, existing-empty grade
+// expected output: <empty line>
+
+G: 5
+
+// TC-10
+// Test Requirements R3, R8
+// short form command name, existing bus route
+// expected output: SWEDLUND,SHARRI,3,107
+//                  ZAPPAVIGNA,ELLIOTT,6,106
+//                  SAENPHIMMACHA,NUMBERS,6,111
+//                  BOYTER,WAN,6,102
+//                  KOZOLA,BUSTER,2,108
+//                  DEMARTINI,DEWAYNE,6,102
+//                  BEX,TAMESHA,4,105
+//                  WERST,LEON,6,111
+//                  LAMKIN,TAMA,6,111
+
+B: 55
+
+// TC-11
+// Test Requirements R3, R8
+// long form command name, non-existing bus route
+// expected output: <empty line>
+
+Bus: 60
+
+// TC- 12
 // Tests Requirements R3, R8
 // long form command name, non-existing bus number
 // expected output: <empty line>
 
 Bus: -10
 
-// TC-
+// TC- 13
 // Tests Requirements R3, R9
-// short form command name, existing grade number high
+// short form command name, existing grade GPA high
 // expected output: SWEDLUND,SHARRI,3.24,FAFARD,ROCIO,55
 
 G: 3 H
 
-// TC-
+// TC- 14
 // Tests Requirements R3, R9
-// long form command name, existing grade number low
+// long form command name, existing grade GPA low
 // expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
 
 Grade: 3 Low
 
-// TC-
+// TC- 15
 // Tests Requirements R3, R9
 // short form command name, non-existing grade number low
 // expected output: <empty line>
 
 G: 8 L
 
-// TC-
+// TC- 16
 // Tests Requirements R3, R9
 // long form command name, existing grade number high, with duplicates
 // expected output: CORKER,CARTER,3.12,HANTZ,JED,53/nRAPOSE,ALONZO,3.12,HANTZ,JED,51
 
 Grade: 4 High
 
-// TC-
+// TC- 17
 // Tests Requirements R3, R10
 // long form command name, existing grade number average
 // expected output: 1, 3.0
 
 Average: 1 
 
-// TC-
+// TC- 18
 // Tests Requirements R3, R10
 // short form command name, non-existing grade number average
 // expected output: <empty line>
 
 A: 0
 
-// TC-
+// TC- 19
 // Tests Requirements R3, R11
 // long form command name, info
 // expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
 
 Info
 
-// TC-
+// TC- 20
 // Tests Requirements R3, R11
 // short form command name, info
 // expected output: 1: 2/n2: 13/n3: 9/n4: 15/n6: 21
 
 I
 
-// TC-
+// TC- 21
 // Tests Requirements R3, R13
 // quit command
 // expected output: program terminates
 Q
 
-// TC (ensured this worked by altering students.txt)
+// TC- 22 (ensured this worked by altering students.txt)
 // Tests Requirements R13, E1
 // file not found
 // expected output: "file not found" program exits gracefully
 
-// TC (ensured this worked by altering students.txt)
+// TC- 23(ensured this worked by altering students.txt)
 // Tests Requirements R13, E1
 // wrong format of student information: grade, classroom, bus, gpa
 // expected output: "wrong <variable>" program exits gracefully 

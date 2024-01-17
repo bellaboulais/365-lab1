@@ -6,9 +6,9 @@
 // TC-
 // Tests Requirements R3, R8
 // short form command name, existing bus number
-// expected output: EARLY,TORY,3,107 
+// expected output: RACANELLO,NOEL,6,102\nVILARDO,EMMANUEL,2,104\nKRAKE,VALENTIN,6,109\nBEAN,INGER,6,111\nBUSSMANN,BILLY,2,108\nFEYEREISEN,WILFREDO,6,111
 
-B: 52
+B: 56
 
 // TC-
 // Tests Requirements R3, R8
